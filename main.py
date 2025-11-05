@@ -7,7 +7,7 @@ load_dotenv("data.env")
 
 STOCK_API_KEY = os.getenv("STOCK_API_KEY")
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
-TWILIO_SID = os.getenv("TWILIO_SID")
+
 TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
 TWILIO_FROM = os.getenv("from_")
 TWILIO_TO = os.getenv("to")
@@ -71,3 +71,4 @@ if diff_percent > 5:
         print(f"✅ Sent: {message.sid}")
 else:
     print("Change below threshold. No news sent.")
+
